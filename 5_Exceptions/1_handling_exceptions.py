@@ -1,6 +1,10 @@
 try:
     age = int(input('Age: '))
-except ValueError:
+except ValueError as ex:
     print('Input was not a valid age')
+    print(ex)
+    print(type(ex))
+else:
+    print('No exceptions were thrown')
 
 print("Execution continues")
