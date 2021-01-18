@@ -6,12 +6,22 @@ class Point:
         self.x = x
         self.y = y
 
+    @classmethod
+    def zero(cls):
+        return cls(0, 0)
+
     def draw(self):
         print(f'Point ({self.x}, {self.y})')
 
 
 point = Point(1, 2)
 point.draw()
+
+# Class method
+# Can be used to create an instance with some default values.
+# Good for complex instances
+point2 = Point.zero()
+point2.draw()
 
 # Will chang that specific point but not the default for all points
 point.default_color = 'green'
