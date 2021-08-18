@@ -11,7 +11,7 @@ rating = 4.99
 is_published = False
 
 #! String is a combination of characters, surrounded by quotes
-course_name = 'Python'
+course_name = "Python"
 
 print(students_count)
 
