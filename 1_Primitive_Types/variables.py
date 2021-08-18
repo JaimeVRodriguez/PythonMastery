@@ -1,4 +1,6 @@
 
+#! Variables are the names of the "item"
+
 #! Whole numbers are integers aka int
 students_count = 1000
 
