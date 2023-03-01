@@ -1,4 +1,3 @@
-
 class Point:
     default_color = 'red'
 
@@ -6,14 +5,13 @@ class Point:
         self.x = x
         self.y = y
 
+    @classmethod
+    def zero(cls):
+        return cls(0, 0)
+
     def draw(self):
         print(f'Point ({self.x},{self.y})')
 
-point = Point(1, 2)
-point.default_color = 'blue'
-print(point.default_color)
-point.draw()
 
-point2 = Point(3, 4)
-print(point2.default_color)
-point2.draw()
+point = Point.zero()
+point.draw()
