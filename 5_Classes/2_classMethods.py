@@ -9,9 +9,16 @@ class Point:
     def zero(cls):
         return cls(0, 0)
 
+    @classmethod
+    def one_two(cls):
+        return cls(1, 2)
+
     def draw(self):
         print(f'Point ({self.x},{self.y})')
 
 
 point = Point.zero()
 point.draw()
+
+point2 = Point.one_two()
+point2.draw()
