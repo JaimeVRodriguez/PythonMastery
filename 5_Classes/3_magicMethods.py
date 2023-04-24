@@ -12,3 +12,5 @@ class Point:
 
 point = Point(1, 2)
 print(point)
+
+point.draw()
